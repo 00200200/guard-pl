@@ -50,7 +50,7 @@ CV gives a reliable performance estimate without overfitting a single split. Pro
 
 ## Results
 
-In-domain (notebook 02, 5-fold stratified CV on 277 prompts, threshold 0.30 picked by F1 sweep on aggregated OOF predictions):
+In-domain (notebook 02, 5-fold stratified CV on 277 prompts, threshold 0.35 picked by F1 sweep on aggregated predictions):
 
 | metric    | value                                         |
 | --------- | --------------------------------------------- |
