@@ -222,3 +222,5 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Trained models (run train_setfit.py to regenerate)
+models/
