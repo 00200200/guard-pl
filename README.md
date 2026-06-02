@@ -39,7 +39,7 @@ app.py                   Streamlit demo
 
 ## Approach
 
-`sdadas/st-polish-paraphrase-from-mpnet` fine-tuned with [SetFit](https://github.com/huggingface/setfit) (contrastive learning + logistic head). Inference: `model.predict_proba(prompt)[1] >= threshold` → block. Threshold tuned to 0.35 on held-out validation (notebook 02).
+`sdadas/st-polish-paraphrase-from-mpnet` fine-tuned with [SetFit](https://github.com/huggingface/setfit) (contrastive learning + logistic head). Inference: `model.predict_proba(prompt)[1] >= threshold` → block. Threshold tuned to 0.30 on held-out validation (notebook 02).
 
 `train_setfit.py` runs:
 
@@ -50,7 +50,7 @@ CV gives a reliable performance estimate without overfitting a single split. Pro
 
 ## Results
 
-In-domain (notebook 02, 5-fold stratified CV on 277 prompts, threshold 0.35 picked by F1 sweep on aggregated predictions):
+In-domain (notebook 02, 5-fold stratified CV on 277 prompts, threshold 0.30 picked by F1 sweep on aggregated predictions):
 
 | metric    | value                                         |
 | --------- | --------------------------------------------- |
